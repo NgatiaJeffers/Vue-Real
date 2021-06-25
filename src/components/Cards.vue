@@ -1,5 +1,5 @@
 <template>
-  <h2>Hello</h2>
+  <h4>Click on the Blogs/Login/Register to redirect...</h4>
 </template>
 
 <script>
@@ -12,5 +12,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+h4 {
+  text-align: center;
+  margin-top: 4em;
+}
 </style>

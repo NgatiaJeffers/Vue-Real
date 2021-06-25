@@ -1,5 +1,8 @@
 import Vue from 'vue';
 import { createStore } from 'vuex';
+import firebase from "firebase/app";
+import "firebase/auth";
+import db from "../firebase/firebaseInit";
 
 
 export default createStore({
@@ -18,6 +21,11 @@ export default createStore({
     },
   },
   actions: {
+    async getCurrentUser({ commit }) {
+      const dataBase = await db.collection('users').doc(firebase.auth().currentUser.uid);
+      const dbResults = await dataBase.get();
+      console.log(dbResults);
+    }
   },
   modules: {
   }

@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <BlogPost :post="post" v-for="post in sampleBlogPost" :key="post.id" />
     <div class="blog-card-wrap">
       <div class="container">
         <!-- <h3>View More Recent Blogs</h3> -->
@@ -22,11 +21,6 @@ export default {
   data() {
     return {
       sampleBlogPost: [
-        // {
-        //   title: "This is a Filler Title!",
-        //   blogHTML: "This is a filler blog post title",
-        //   blogCoverPhoto: "beautiful-stories",
-        // },
         {
           title: "This is a Filler Title2!",
           blogHTML: "This is a filler blog post title",
